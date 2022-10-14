@@ -10,13 +10,11 @@ import ResultsPage from "./components/pages/ResultsPage/ResultsPage";
 function App() {
 
   return (
-  <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<MainPage />}>
-      <Route path="results" element={<ResultsPage />} />
-    </Route>
-  </Routes>
-</BrowserRouter>
+    <>
+   <Header />
+   {this.props.children}
+   <Footer />
+   </>
   )}
 
 export default App;
